@@ -1,0 +1,2 @@
+vagrant-haproxy-vrrp-puppet
+===========================
