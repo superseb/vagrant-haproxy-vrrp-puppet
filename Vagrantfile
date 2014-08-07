@@ -39,6 +39,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     web02_config.vm.network :private_network, ip: "172.28.33.22"
   end 
 
+  config.vm.provision "shell",
+    inline: "iptables -F"
+
   config.vm.provision "puppet" do |puppet|
     puppet.manifests_path = "manifests"
     puppet.module_path    = "modules"

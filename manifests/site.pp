@@ -101,5 +101,6 @@ node /haproxy02/ {
 
 }
 
-node default {
+node /web/ {
+  include ::apache
 }

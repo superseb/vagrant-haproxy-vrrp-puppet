@@ -7,10 +7,10 @@ Vagrant setup where Puppet will configure keepalived with a virtual IP and appli
 * Clone this repository
 * puppet module install arioch-keepalived --modulepath=modules
 * puppet module install puppetlabs-haproxy --modulepath=modules
+* puppet module install puppetlabs-apache --modulepath=modules
 * vagrant up
 
 #### Todo:
-* Configure webservers through Puppet
 * Configure rsyslogd for proper logging
 
 Usage  |  IP
